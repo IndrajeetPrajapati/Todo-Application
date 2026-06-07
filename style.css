@@ -66,15 +66,17 @@ li {
 }
 
 button {
-    background-color: transparent;
-    border: none;
+    background-color: pink;
+    border: 1px solid red;
     color: #dc3545;
     font-size: 16px;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 button:hover {
-    color: #c82333;
+    color: black;
+    background-color: yellowgreen;
 }
 
 
