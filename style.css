@@ -5,15 +5,18 @@
 }
 
 body {
+    padding: 20px;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: rgb(28, 28, 44);
     display: flex;
+    min-height: 100vh;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
 .container {
+    width: 90%;
+    max-width: 600px;
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
@@ -43,7 +46,8 @@ body {
 }
 
 #to-do #btn:hover {
-    background-color: #218838;
+    color: black;
+    background-color: yellow;
 }
 
 ul {
@@ -71,5 +75,66 @@ button {
 
 button:hover {
     color: #c82333;
+}
+
+
+/* Tablet */
+@media (max-width: 768px) {
+
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    #to-do {
+        flex-direction: column;
+    }
+
+    #task {
+        width: 100%;
+    }
+
+    #to-do #btn {
+        width: 100%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    #task {
+        font-size: 16px;
+    }
+
+    #to-do #btn {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    li {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
 }
 
